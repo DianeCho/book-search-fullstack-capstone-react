@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="print.css" rel="stylesheet" media="print">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+
+    <div id="messageBox" class="demoMessage">
+        <span>Loading ...</span>
+                    <button id="hideBtn">X</button>
+    </div>
+-->
+
+
+    <!--   main page explaining about the app -->
+
+    <main id='intro' class='js-main-page'>
+        <h1><img src="images/logo.jpeg" class="logo" alt="">Bookworms Welcome!</h1>
+        <p class="heading">Search for books that you will like to read!</p>
+        <ol class="instructions">
+            <li>You can search for books based on a title or an author.</li>
+            <li>Select the book you are interested in reading or have read</li>
+            <li>Save the book selected or if you read the book, you can also review the book.</li>
+            <li>Save your list of books to keep track and what you have read.</li>
+        </ol>
+        <button type="submit" class="enter">Enter</button>
+    </main>
+
+
+    <!--   login form-->
+
+    <main class="js-login-page">
+        <form action="#" class="js-login-form">
+            <h2><img src="images/logo.jpeg" class="logo" alt="">Login Form</h2>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="sign-in-username" placeholder="Enter Username" name="uname" value="dicho@domain.com" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="sign-in-password" placeholder="Enter Password" name="psw" value="123" required>
+                <button type="submit" class="login">Login</button>
+            </div>
+
+            <div class="newuser-box">
+                <!--           <button type="button" class="cancelbtn">Cancel</button>-->
+                <span class="newuser">Register as <a href="#" class="newuserlink">new user?</a></span>
+                <!--            <span class="psw">Forgot <a href="#">password?</a></span>-->
+            </div>
+        </form>
+    </main>
+
+    <!--   register as new user -->
+    <main class="js-newuser-page">
+        <form action="#" class="js-newuser-form">
+            <h2><img src="images/logo.jpeg" class="logo" alt="">Register as New User</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="First Name" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Email Address" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="npassword">New Password</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="npassword" name="npassword" placeholder="New Password" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="cpassword">Confirm Password</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="cpassword" name="cpassword" placeholder="Confirm Password" value="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="registerbtn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newuser-box">
+                <!--           <button type="button" class="cancelbtn">Cancel</button>-->
+                <span class="sign-in-trigger">Already Registered? <a href="#" class="signinlink">Sign In</a></span>
+                <!--            <span class="psw">Forgot <a href="#">password?</a></span>-->
+            </div>
+        </form>
+    </main>
+
+    <!--search book-->
+    <main class="js-search-page">
+        <form action="#" class="js-search-form">
+            <h2><img src="images/logo.jpeg" class="logo" alt="">Search Books</h2>
+            <div class="container">
+                <div class="searchColumn">
+                    <label for="query"></label>
+                    <input value="Harry Potter" type="text" class="js-query" placeholder="Find Adventures Here!">
+                    <input value="" type="hidden" class="js-query-username" value="">
+                </div>
+                <div class="searchColumn searchWrapper">
+                    <button type="submit" id="findIt" class="searchbtn">Search</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!--list of book-->
+    <main class="js-books-page">
+        <!--    <form action="#" class="js-ingredients-form">-->
+        <h2><img src="images/logo.jpeg" class="logo" alt="">Books</h2>
+        <div class="container-box">
+            <ul class="goodreads-search-results">
+
+                <!--
+<li>
+    <div class="booktitle">
+        <label for="title">Book Title</label>
+    </div>
+    <img src="images/recipe.jpg" class="recipe" alt="">
+    <div class="books">
+        <ul class="bookslist">
+            <li>author</li>
+        </ul>
+    </div>
+
+</li>
+
+<li>
+    <div class="booktitle">
+        <label for="title">Book Title</label>
+    </div>
+    <img src="images/recipe.jpg" class="recipe" alt="">
+    <div class="books">
+        <ul class="bookslist">
+            <li>author</li>
+
+        </ul>
+    </div>
+
+</li>
+
+<li>
+    <div class="booktitle">
+        <label for="title">Book Title</label>
+    </div>
+    <img src="images/recipe.jpg" class="recipe" alt="">
+    <div class="books">
+        <ul class="bookslist">
+            <li>author</li>
+
+        </ul>
+    </div>
+
+</li>
+
+<li>
+    <div class="booktitle">
+        <label for="title">Book Title</label>
+    </div>
+    <img src="images/recipe.jpg" class="recipe" alt="">
+    <div class="books">
+        <ul class="bookslist">
+            <li>author</li>
+
+        </ul>
+    </div>
+
+</li>
+-->
+
+            </ul>
+            <div class="container continueBtnWrapper">
+                <label for="query"></label>
+                <button type="button" class='optionbutton1' id="returnbtn">Return to Search</button>
+                <button type="submit" id="continue" class="continuebtn">Continue</button>
+            </div>
+        </div>
+        <!--    </form>-->
+    </main>
+
+
+
+
+    <!--   Booklist review-->
+    <main class="js-booklist-page">
+        <!--    <form action="#" class="js-shoppinglist-form">-->
+        <h2><img src="images/logo.jpeg" class="logo" alt="">Book Review</h2>
+
+
+
+        <div class="container">
+            <ul>
+                <!--
+<li>
+    <div class="book-box">
+        <label for="book">Book Title</label>
+        <img src="images/recipe.jpg" class="books" alt="">
+        <ul class="bookreviewlist">
+            <textarea class="reviewbookbox" rows="4" cols="50">
+                                orem Ipsum is simply dummy text of the printing and
+                                typesetwn pro the leap in, remainined.
+                                It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lo
+                            </textarea>
+        </ul>
+        <button type="button" class="reviewbtn">Review</button>
+        <button type="button" class="savebtn">Save</button>
+    </div>
+</li>
+-->
+                <!--
+                <li>
+                    <div class="book-box">
+                        <label for="book">Book Title</label>
+                        <img src="images/recipe.jpg" class="books" alt="">
+                        <ul class="bookreviewlist">
+                            <textarea class="reviewbookbox" rows="4" cols="50">
+                                orem Ipsum is simply dummy text of the printing and
+                                typesetwn pro the leap in, remainined.
+                                It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lo
+                            </textarea>
+                        </ul>
+                        <button type="button" class="reviewbtn">Review</button>
+                        <button type="button" class="savebtn">Save</button>
+                    </div>
+                </li>
+-->
+                <!--
+                <li>
+                    <div class="book-box">
+                        <label for="book">Book Title</label>
+                        <img src="images/recipe.jpg" class="books" alt="">
+                        <ul class="bookreviewlist">
+                            <textarea class="reviewbookbox" rows="4" cols="50">
+                                orem Ipsum is simply dummy text of the printing and
+                                typesetwn pro the leap in, remainined.
+                                It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lo
+                            </textarea>
+                        </ul>
+                        <button type="button" class="reviewbtn">Review</button>
+                        <button type="button" class="savebtn">Save</button>
+                    </div>
+                </li>
+-->
+                <!--
+                <li>
+                    <div class="book-box">
+                        <label for="book">Book Title</label>
+                        <img src="images/recipe.jpg" class="books" alt="">
+                        <ul class="bookreviewlist">
+                            <textarea class="reviewbookbox" rows="4" cols="50">
+                                orem Ipsum is simply dummy text of the printing and
+                                typesetwn pro the leap in, remainined.
+                                It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lo
+                            </textarea>
+                        </ul>
+                        <button type="button" class="reviewbtn">Review</button>
+                        <button type="button" class="savebtn">Save</button>
+                    </div>
+                </li>
+-->
+
+
+            </ul>
+
+            <div class="container" id="optionbox">
+                <label for="query"></label>
+                <!--
+    <input value="" type="text" class="js-query-ingredient-name" placeholder="Add Ingredient">
+    <input value="" type="text" class="js-query-ingredient-qty" placeholder="Ingredient Quantity">
+    <button type="button" class='optionbutton1' id="addbutton">Add More Ingredients</button>
+    <button type="button" class='optionbutton1' id="print">Print</button>
+-->
+                <button type="button" class='optionbutton1' id="returnbtn">Return to Search</button>
+                <button type="button" class='optionbutton1' id="returnmain">Return to Main Page</button>
+            </div>
+
+
+
+        </div>
+        <!--    </form>-->
+    </main>
+
+    <!--footer-->
+
+    <footer>
+        <p>&copy;2018 Diane Cho</p>
+        <ul>
+
+            <li>
+                <a href="https://github.com/DianeCho"><img src="images/github-logo.png" alt="Git Hub Logo"></a>
+            </li>
+            <li>
+                <a href='mailto:diane.kim.cho@gmail.com'><img src="images/email-logo.jpeg" alt="Email Logo"></a>
+            </li>
+            <li>
+                <a href='https://www.linkedin.com/in/dianecho/'><img src="images/linkedin-logo.png" alt="linked in  Logo"></a>
+            </li>
+        </ul>
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>

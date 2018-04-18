@@ -41,7 +41,7 @@ The purpose of this app is to find a book recommendations from Goodread's API
 ![Print page](https://github.com/DianeCho/shopping-list-node-capstone/blob/master/github-images/Screenshot9.png)
 
 ## Working Prototype
-Find a working prototype with Node at https://book-search-fullstack-capstone.herokuapp.com/ .
+Find a working prototype with Node at https://book-search-fullstack-capstone.herokuapp.com/ and React at https://dianecho.github.io/book-search-fullstack-capstone-react/build.
 
 ## Functionality
 * When the user brings up the main page it explains the purpose of the application.
@@ -81,6 +81,17 @@ API endpoints for the back end include:
 * PUT to '/achievement/:id' to update an existing achievement
 * GET to '/achievements/:user' to access all of a user's existing achievements
 * GET to '/achievement/:id' to access a single achievement by ID
+
+## Node command lines
+* npm install ==> install all node modules
+* nodemon server.js ==> run node server
+* npm test ==> run the tests
+
+## React command lines
+* npm install ==> install all node modules
+* npm run build ==> build the react files in the "build" folder
+* npm start ==> run node server on http://127.0.0.1:8080
+* npm test ==> run the tests
 * DELETE to '/achievement/:id' to delete a single achievement by ID
 
 ## Development Roadmap

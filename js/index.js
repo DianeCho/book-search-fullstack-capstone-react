@@ -8,9 +8,14 @@ import {
 // import '../assets/css/main.css';
 
 import MainPage from '../js/components/main-page';
+import LoginPage from '../js/components/login-page';
 
 
 document.addEventListener('DOMContentLoaded', () => {
     return ReactDOM.render( <MainPage /> ,
                            document.getElementById('reactMainPage'));
+});
+document.addEventListener('DOMContentLoaded', () => {
+    return ReactDOM.render( <LoginPage /> ,
+                           document.getElementById('reactLoginPage'));
 });

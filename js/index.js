@@ -7,10 +7,10 @@ import {
 
 // import '../assets/css/main.css';
 
-import Header from '../js/components/header';
+import MainPage from '../js/components/main-page';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    return ReactDOM.render( <Header /> ,
-        document.getElementById('reactHeader'));
+    return ReactDOM.render( <MainPage /> ,
+                           document.getElementById('reactMainPage'));
 });

@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.8)), -webkit-linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("images/background-img.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: ghostwhite;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.demoMessage {
+    position: fixed;
+    top: 0px;
+    left: 40%;
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 5%;
+    width: 30%;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.demoMessage span,
+.demoMessage a {
+    color: #fff;
+
+}
+
+.demoMessage a {
+    cursor: pointer;
+    color: yellow;
+}
+
+.demoMessage #hideBtn {
+    padding: 2px 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 2rem;
+    color: white;
+}
+
+
+
+.logo {
+    height: 40px;
+    margin-right: 1rem;
+    border-radius: 23px;
+}
+
+#intro {
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    padding: 12px 20px;
+}
+
+button.enter {
+    margin-top: 5%;
+}
+
+main {
+    border: 3px solid #f1f1f1;
+    display: block;
+    clear: both;
+    width: 70%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    margin-top: 10rem;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.instructions {
+    list-style-type: upper-latin;
+    text-align: left;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*    margin-left: 30%;*/
+}
+
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+
+
+.newuser-box {
+    padding: 12px 20px;
+    text-align: right;
+    display: inline-block;
+    float: right;
+    margin-top: -50px;
+}
+
+/*
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+*/
+
+button {
+    background: #428BCA;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    padding: 4px 18px 9px;
+    /*    margin: 8px 0;*/
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.searchColumn {
+    display: inline-block;
+    width: 69%;
+}
+
+.searchWrapper {
+    width: 30%;
+}
+
+#returnbtn,
+#returnmain {
+    background-color: #f44336;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.fa-info-circle:before {
+    content: "\f05a";
+    color: ghostwhite;
+    opacity: 0.8;
+    margin-left: 1rem;
+}
+
+.cancelbtn,
+.addbtn {
+    width: auto;
+    padding: 8px 18px;
+    background-color: #f44336;
+    margin-bottom: 20%;
+}
+
+button.addbtn {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.deleteDB {
+    display: block;
+}
+
+
+.optionbutton {
+    margin-left: 1rem;
+}
+
+.container {
+    padding: 16px;
+    text-align: left;
+}
+
+div.container.continueBtnWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+}
+
+.newuser-box button1 {
+    padding: 16px;
+    text-align: right;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    text-shadow: 1px 1px grey;
+}
+
+span.newuser {
+    padding-top: 16px;
+    margin-left: 20px;
+    text-shadow: 1px 1px grey;
+}
+
+.newuserlink,
+.signinlink {
+    color: ghostwhite;
+}
+
+
+.js-booklist-page li {
+    border-top: 1px solid white;
+    width: 47%;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    /* margin-top: 5rem; */
+    margin-bottom: 1rem;
+    vertical-align: top;
+    padding-left: 5%;
+}
+
+.goodreads-search-results img {
+    margin-top: 40px;
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+
+.goodreads-search-results li {
+
+    /*    display: inline-block;*/
+}
+
+li {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 75%;
+
+}
+
+.bookslist li,
+.ingredientslist li {
+    /*
+    margin: 4px;
+    border: none;
+*/
+}
+
+.bookslist li {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 2rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ingredientlistfromrecipe {
+    display: block;
+    text-align: left;
+    color: #4CAF50;
+    background: linear-gradient(to right, rgba(20, 20, 20, 0.08), rgb(20, 20, 20));
+}
+
+.bookreviewlist li {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.reviewbookbox {
+    /*    width: 25%;*/
+}
+
+.booktitle {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.bookAuthor {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.booktitle label {
+    height: 54px;
+    overflow-x: auto;
+    display: block;
+}
+
+.ingredientBox {
+    height: 160px;
+    overflow-x: auto;
+}
+
+ul.bookreviewlist {
+    margin-top: 10%;
+}
+
+textarea.reviewbookbox {
+    width: 100%;
+}
+
+button.reviewbtn {
+    margin: 10px;
+    width: 75px;
+}
+
+button.deletebtn {
+    background: #f44336;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.container ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.book-box {
+    text-align: center;
+    padding: 5px 10px;
+    width: 100%;
+    /* margin-bottom: -10rem; */
+}
+
+img.books {
+    border-radius: 20px;
+    margin-top: 5%;
+
+}
+
+.books {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+div#optionbox.container {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*    width: 50%;*/
+    padding-left: 25%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 25%;
+}
+
+footer li {
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer li img {
+    width: auto;
+    max-height: 30px;
+    border-radius: 5px;
+    margin-left: 9px;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}

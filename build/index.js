@@ -76,6 +76,10 @@
 	
 	var _footerPage2 = _interopRequireDefault(_footerPage);
 	
+	var _newuserPage = __webpack_require__(551);
+	
+	var _newuserPage2 = _interopRequireDefault(_newuserPage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -96,6 +100,9 @@
 	});
 	document.addEventListener('DOMContentLoaded', function () {
 	    return _reactDom2.default.render(_react2.default.createElement(_footerPage2.default, null), document.getElementById('reactFooterPage'));
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_newuserPage2.default, null), document.getElementById('reactNewuserPage'));
 	});
 
 /***/ }),
@@ -67120,6 +67127,181 @@
 	                    'a',
 	                    { href: 'https://www.linkedin.com/in/dianecho/' },
 	                    _react2.default.createElement('img', { src: 'assets/images/linkedin-logo.png', alt: 'linked in  Logo' })
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 551 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = NewuserPage;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function NewuserPage(props) {
+	    return _react2.default.createElement(
+	        'main',
+	        { className: 'js-newuser-page' },
+	        _react2.default.createElement(
+	            'form',
+	            { action: '#', className: 'js-newuser-form' },
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                _react2.default.createElement('img', { src: 'assets/images/logo.jpeg', className: 'logo', alt: '' }),
+	                'Register as New User'
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-25' },
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'fname' },
+	                            'First Name'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-75' },
+	                        _react2.default.createElement('input', { type: 'text', id: 'fname', name: 'firstname', placeholder: 'First Name' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-25' },
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'lname' },
+	                            'Last Name'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-75' },
+	                        _react2.default.createElement('input', { type: 'text', id: 'lname', name: 'lastname', placeholder: 'Last Name' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-25' },
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'email' },
+	                            'Email address'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-75' },
+	                        _react2.default.createElement('input', { type: 'text', id: 'email', name: 'email', placeholder: 'Email Address' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-25' },
+	                            _react2.default.createElement(
+	                                'label',
+	                                { htmlFor: 'npassword' },
+	                                'New Password'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-75' },
+	                            _react2.default.createElement('input', { type: 'text', id: 'npassword', name: 'npassword', placeholder: 'New Password' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'row' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-25' },
+	                                _react2.default.createElement(
+	                                    'label',
+	                                    { htmlFor: 'cpassword' },
+	                                    'Confirm Password'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-75' },
+	                                _react2.default.createElement('input', { type: 'text', id: 'cpassword', name: 'cpassword', placeholder: 'Confirm Password' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'row' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                { type: 'submit', className: 'registerbtn' },
+	                                'Register'
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'newuser-box' },
+	                _react2.default.createElement(
+	                    'span',
+	                    { className: 'sign-in-trigger' },
+	                    'Already Registered? ',
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#', className: 'signinlink' },
+	                        'Sign In'
+	                    )
 	                )
 	            )
 	        )

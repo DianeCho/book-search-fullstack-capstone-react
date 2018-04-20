@@ -12,6 +12,7 @@ import LoginPage from '../js/components/login-page';
 import SearchPage from '../js/components/search-page';
 import BooksPage from '../js/components/books-page';
 import FooterPage from '../js/components/footer-page';
+import NewuserPage from '../js/components/newuser-page';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,4 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     return ReactDOM.render( <FooterPage /> ,
                            document.getElementById('reactFooterPage'));
+});
+document.addEventListener('DOMContentLoaded', () => {
+    return ReactDOM.render( <NewuserPage /> ,
+                           document.getElementById('reactNewuserPage'));
 });

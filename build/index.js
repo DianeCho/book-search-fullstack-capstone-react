@@ -64,6 +64,14 @@
 	
 	var _loginPage2 = _interopRequireDefault(_loginPage);
 	
+	var _searchPage = __webpack_require__(548);
+	
+	var _searchPage2 = _interopRequireDefault(_searchPage);
+	
+	var _booksPage = __webpack_require__(549);
+	
+	var _booksPage2 = _interopRequireDefault(_booksPage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -75,6 +83,12 @@
 	});
 	document.addEventListener('DOMContentLoaded', function () {
 	    return _reactDom2.default.render(_react2.default.createElement(_loginPage2.default, null), document.getElementById('reactLoginPage'));
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_searchPage2.default, null), document.getElementById('reactSearchPage'));
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_booksPage2.default, null), document.getElementById('reactBooksPage'));
 	});
 
 /***/ }),
@@ -66887,6 +66901,142 @@
 	                        { href: '#', className: 'newuserlink' },
 	                        'new user?'
 	                    )
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 548 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = SearchPage;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function SearchPage(props) {
+	    return _react2.default.createElement(
+	        'main',
+	        { className: 'js-search-page' },
+	        _react2.default.createElement(
+	            'form',
+	            { action: '#', className: 'js-search-form' },
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                _react2.default.createElement('img', { src: 'assets/images/logo.jpeg', className: 'logo', alt: '' }),
+	                'Search Books'
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'searchColumn' },
+	                    _react2.default.createElement('label', { htmlFor: 'query' }),
+	                    _react2.default.createElement('input', { type: 'text', className: 'js-query', placeholder: 'Find Adventures Here!' }),
+	                    _react2.default.createElement('input', { value: '', type: 'hidden', className: 'js-query-username' })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'searchColumn searchWrapper' },
+	                    _react2.default.createElement(
+	                        'button',
+	                        { type: 'submit', id: 'findIt', className: 'searchbtn' },
+	                        'Search'
+	                    )
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 549 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = BooksPage;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function BooksPage(props) {
+	    return _react2.default.createElement(
+	        'main',
+	        { className: 'js-books-page' },
+	        _react2.default.createElement(
+	            'h2',
+	            null,
+	            _react2.default.createElement('img', { src: 'assets/images/logo.jpeg', className: 'logo', alt: '' }),
+	            'Books'
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'container-box' },
+	            _react2.default.createElement('ul', { className: 'goodreads-search-results' }),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container continueBtnWrapper' },
+	                _react2.default.createElement('label', { htmlFor: 'query' }),
+	                _react2.default.createElement(
+	                    'button',
+	                    { type: 'button', className: 'optionbutton1', id: 'returnbtn' },
+	                    'Return to Search'
+	                ),
+	                _react2.default.createElement(
+	                    'button',
+	                    { type: 'submit', id: 'continue', className: 'continuebtn' },
+	                    'Continue'
 	                )
 	            )
 	        )

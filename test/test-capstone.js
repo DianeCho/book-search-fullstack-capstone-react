@@ -21,26 +21,26 @@ describe('<LoginPage />', () => {
 });
 describe('<MainPage />', () => {
         it('Renders without crashing', () => {
-            shallow(<LoginPage />);
+            shallow(<MainPage />);
         });
 });
 describe('<SearchPage />', () => {
         it('Renders without crashing', () => {
-            shallow(<LoginPage />);
+            shallow(<SearchPage />);
         });
 });
 describe('<BooksPage />', () => {
         it('Renders without crashing', () => {
-            shallow(<LoginPage />);
+            shallow(<BooksPage />);
         });
 });
 describe('<FooterPage />', () => {
         it('Renders without crashing', () => {
-            shallow(<LoginPage />);
+            shallow(<FooterPage />);
         });
 });
 describe('<NewuserPage />', () => {
         it('Renders without crashing', () => {
-            shallow(<LoginPage />);
+            shallow(<NewuserPage />);
         });
 });

@@ -72,6 +72,10 @@
 	
 	var _booksPage2 = _interopRequireDefault(_booksPage);
 	
+	var _footerPage = __webpack_require__(550);
+	
+	var _footerPage2 = _interopRequireDefault(_footerPage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -89,6 +93,9 @@
 	});
 	document.addEventListener('DOMContentLoaded', function () {
 	    return _reactDom2.default.render(_react2.default.createElement(_booksPage2.default, null), document.getElementById('reactBooksPage'));
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_footerPage2.default, null), document.getElementById('reactFooterPage'));
 	});
 
 /***/ }),
@@ -67037,6 +67044,82 @@
 	                    'button',
 	                    { type: 'submit', id: 'continue', className: 'continuebtn' },
 	                    'Continue'
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 550 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FooterPage;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function FooterPage(props) {
+	    return _react2.default.createElement(
+	        'footer',
+	        null,
+	        _react2.default.createElement(
+	            'p',
+	            null,
+	            '\xA92018 Diane Cho'
+	        ),
+	        _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://github.com/DianeCho' },
+	                    _react2.default.createElement('img', { src: 'assets/images/github-logo.png', alt: 'Git Hub Logo' })
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: 'mailto:diane.kim.cho@gmail.com' },
+	                    _react2.default.createElement('img', { src: 'assets/images/email-logo.jpeg', alt: 'Email Logo' })
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://www.linkedin.com/in/dianecho/' },
+	                    _react2.default.createElement('img', { src: 'assets/images/linkedin-logo.png', alt: 'linked in  Logo' })
 	                )
 	            )
 	        )

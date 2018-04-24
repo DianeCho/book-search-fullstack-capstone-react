@@ -15,6 +15,7 @@ export default function LoginPage(props) {
             <form action="#" className="js-login-form">
                 <h2><img src="assets/images/logo.jpeg" className="logo" alt="" />Login Form</h2>
                 <div className="container">
+                <p>For demo account use demo@domain.com and password 123</p>
                     <label htmlFor="uname"><b>Username</b></label>
                     <input type="text" id="sign-in-username" placeholder="Enter Username" name="uname" required />
 

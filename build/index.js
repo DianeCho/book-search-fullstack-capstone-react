@@ -66878,6 +66878,11 @@
 	                'div',
 	                { className: 'container' },
 	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'For demo account use demo@domain.com and password 123'
+	                ),
+	                _react2.default.createElement(
 	                    'label',
 	                    { htmlFor: 'uname' },
 	                    _react2.default.createElement(

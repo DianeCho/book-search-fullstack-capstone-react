@@ -21943,31 +21943,31 @@
 	            'Bookworms Welcome!'
 	        ),
 	        _react2.default.createElement(
-	            'p',
-	            { className: 'heading' },
-	            'Search for books that you will like to read!'
-	        ),
-	        _react2.default.createElement(
 	            'ol',
 	            { className: 'instructions' },
 	            _react2.default.createElement(
 	                'li',
-	                null,
+	                { className: 'heading' },
+	                'Search for books that you will like to read!'
+	            ),
+	            _react2.default.createElement(
+	                'li',
+	                { className: 'heading' },
 	                'You can search for books based on a title or an author.'
 	            ),
 	            _react2.default.createElement(
 	                'li',
-	                null,
+	                { className: 'heading' },
 	                'Select the book you are interested in reading or have read'
 	            ),
 	            _react2.default.createElement(
 	                'li',
-	                null,
+	                { className: 'heading' },
 	                'Save the book selected or if you read the book, you can also review the book.'
 	            ),
 	            _react2.default.createElement(
 	                'li',
-	                null,
+	                { className: 'heading' },
 	                'Save your list of books to keep track and what you have read.'
 	            )
 	        ),
